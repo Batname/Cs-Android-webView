@@ -10,8 +10,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
         WebView webview = new WebView(this);
+        // webview.loadUrl("http://10.0.2.2:8000"); // Origin origin 'http://10.0.2.2:8000'
         webview.loadUrl("https://www.casinoheroes.com");
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
