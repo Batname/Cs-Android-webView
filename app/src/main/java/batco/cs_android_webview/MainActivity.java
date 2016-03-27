@@ -12,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         WebView webview = new WebView(this);
-        webview.loadUrl("https://www.google.se");
+        webview.loadUrl("https://www.casinoheroes.com");
         webview.setWebViewClient(new WebViewClient());
+        webview.getSettings().setJavaScriptEnabled(true);
         setContentView(webview);
     }
 }
